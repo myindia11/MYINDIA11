@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContestsFragments.MyContestsTeams"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#ECECEC">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="start"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+                <ImageView
+                    android:id="@+id/team_one_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/hydrabad"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/team_one_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM ONE"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+                <ImageView
+                    android:id="@+id/team_two_logo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bangalore"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/team_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM TWO"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/match_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamsRecycler"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="40dp"/>
+
+</FrameLayout>

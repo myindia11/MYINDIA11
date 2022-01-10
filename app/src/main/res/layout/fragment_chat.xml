@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomNavigation.Chat"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@+id/toolbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_strip"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24_white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center|start">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:civ_border_color="@color/colorStart"
+                app:civ_border_width="0.5dp"
+                android:src="@drawable/profile_pic_temp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="5dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person Name"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/swiperefresh">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_mess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have already left the group."
+                android:textSize="18sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/chatBoxLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:id="@+id/editChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/chat_box_bck"
+                        android:layout_margin="5dp"
+                        android:hint="Write message.."
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="15sp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A9A9A9"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+
+                    <FrameLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_margin="5dp">
+                        <ImageView
+                            android:id="@+id/imgSend"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_baseline_send_24"
+                            android:layout_gravity="center"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

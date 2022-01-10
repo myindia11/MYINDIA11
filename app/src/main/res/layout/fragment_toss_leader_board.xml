@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TossPrediction.TossLeaderBoard"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@+id/toolbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_strip"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24_white">
+        <TextView
+            android:id="@+id/match_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toss Details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash_back"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="0.5"
+                            android:layout_column="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardBackgroundColor="@color/white">
+                                <ImageView
+                                    android:id="@+id/team_one_logo"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/hydrabad"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:id="@+id/team_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T-One"
+                                android:fontFamily="@font/open_sans"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:layout_marginTop="5dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:layout_column="2"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Leaderboard"
+                                android:textAllCaps="true"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="75dp"
+                            android:layout_weight="0.5"
+                            android:layout_column="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardBackgroundColor="@color/white">
+                                <ImageView
+                                    android:id="@+id/team_two_logo"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/bangalore"
+                                    android:layout_gravity="center"/>
+
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:id="@+id/team_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="T-Two"
+                                android:fontFamily="@font/open_sans"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:layout_marginTop="5dp"/>
+
+                        </LinearLayout>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toss_recycler"
+        android:layout_margin="5dp"/>
+
+
+
+</LinearLayout>

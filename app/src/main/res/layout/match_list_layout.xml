@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:background="@drawable/onboard_back">
+                    <TextView
+                        android:id="@+id/contest_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Team-1 VS Team-2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/raleway"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="10dp">
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:layout_column="1"
+                                android:layout_weight="1">
+                                <FrameLayout
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="start">
+                                    <ImageView
+                                        android:id="@+id/team_one_logo"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/hydrabad"
+                                        android:layout_gravity="center|top"/>
+                                    <TextView
+                                        android:id="@+id/team_one_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Team-1"
+                                        android:textSize="13sp"
+                                        android:fontFamily="@font/raleway"
+                                        android:textColor="@color/black"
+                                        android:layout_gravity="center|bottom"
+                                        android:layout_marginBottom="10dp"/>
+                                </FrameLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/vs_icon" />
+                                <TextView
+                                    android:id="@+id/event_timer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/raleway_medium"
+                                    android:text="5H 30M"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FF9800"
+                                    android:layout_marginTop="5dp"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:layout_column="3"
+                                android:layout_weight="1">
+                                <FrameLayout
+                                    android:layout_width="90dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end">
+                                    <ImageView
+                                        android:id="@+id/team_two_logo"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginTop="5dp"
+                                        android:src="@drawable/bangalore"
+                                        android:layout_gravity="center|top"/>
+                                    <TextView
+                                        android:textColor="@color/black"
+                                        android:id="@+id/team_two_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Team-2"
+                                        android:textSize="13sp"
+                                        android:fontFamily="@font/raleway"
+                                        android:layout_gravity="center|bottom"
+                                        android:layout_marginBottom="10dp"/>
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#f8f8f8">
+                    <TextView
+                        android:id="@+id/league_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="League Type"
+                        android:textSize="12sp"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.1"
+                        android:textSize="12sp"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

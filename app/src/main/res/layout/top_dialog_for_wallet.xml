@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/add_money_back"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available total balance"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_gravity="center"
+            android:text="Rs.100"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_player_back">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_gravity="start">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bonus"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:id="@+id/bonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.100"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="90dp"
+                android:background="@color/colorStart"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_gravity="end">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Winning"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:id="@+id/winning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.100"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: You can only use upto 7% of entry fee of bonus balance."
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_light"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

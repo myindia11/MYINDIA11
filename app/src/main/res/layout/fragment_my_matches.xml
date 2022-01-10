@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BottomNavigation.MyMatches"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@+id/toolbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_strip"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Matches"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/colorStart"
+        app:tabTextColor="@color/black"
+        android:background="#E8E8E8"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager"/>
+
+
+
+</LinearLayout>

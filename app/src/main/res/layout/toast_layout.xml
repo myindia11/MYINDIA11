@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFE9D6"
+    android:gravity="center"
+    android:id="@+id/toast_lay">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_warning_24"/>
+    <TextView
+        android:id="@+id/toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast message goes here.."
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/open_sans"
+        android:textSize="14sp"/>
+
+</LinearLayout>

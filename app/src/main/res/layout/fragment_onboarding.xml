@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartingActivity.Onboarding"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/sp_bck">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:id="@+id/viewPager"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Welcome to"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/india11logo_white"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <LinearLayout
+            android:id="@+id/signup"
+            android:layout_width="165dp"
+            android:layout_height="45dp"
+            android:background="@drawable/onboard_back"
+            android:layout_margin="10dp"
+            android:layout_gravity="center|start"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="165dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end|center"
+            android:background="@drawable/onboard_back"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="By using INDIA11 you will be agreeing our Terms &amp; Conditions"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

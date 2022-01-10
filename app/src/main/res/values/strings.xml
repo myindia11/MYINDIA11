@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MYINDIA11</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="note">Note: You can only upto 7% of bonus amount of the total match fee. And by joining this league you are
+    agree to INDIA11 T &amp; C and confirm that you are above 18 years of old and have permission to play these kind of fantasy
+    sports. INDIA11 does not promote anyone to indulge the riskiest sports. You will be playing on your own risk.</string>
+
+    <string name="cric_api">https://cricapi.com/api/matches?apikey=R0Fi2W5ZWIVAYFJVHp3ICGB4WKs2</string>
+    <string name="facebook_app_id">162050889320167</string>
+    <string name="fb_login_protocol_scheme">fb162050889320167</string>
+    <string name="fefer_note">Refer a friend and earn Rs.25 as bonus amount and use it for playing the contest and convert the bonus amount
+    as real cash after winning. Your friend will get Rs.25 as bonus amount when he/she will install MyIndia11 application using your link and
+    referral code given below.</string>
+    <string name="first_select_a_match_from_the">First select a match from the available upcoming match list to get started
+     to play your first game on MyIndia11 and win the cash prizes.</string>
+    <string name="create_team">Create your team and select your best 11 players from the list choose captain who will get 2x points and vice captain
+     who will get 1.5x points.</string>
+    <string name="join_league">Join a league of selected match and start winning the cash.</string>
+    <string name="faq1">On MYINDIA11, you can simply create your fantasy team based on a real life match to score maximum points and win
+     exciting cash prizes worth millions.</string>
+    <string name="faq2">Lots of players have won cash prizes on MYINDIA11 and you can also win big. There are different kinds of cash
+     contests available, each with its own entry fee and winning cash prizes.</string>
+    <string name="faq3">Adding money to your MYINDIA11 wallet is simple and safe. We ensure the security of our customers credentials
+     and we do not disclose any information of users. We only ask and store the customers bank details to credit the winning amount directly
+     to users bank account and that is also secured with us.</string>
+    <string name="note_if_in_a_run_out">NOTE: If in a run out more than 2 players involved then the point will be awarded to only
+    last two players who have touched the ball.</string>
+    <string name="update">Update the current version of the MYINDIA11 with new version for better user experience and to use added new features.</string>
+    <string name="by_registering"><![CDATA[By registering, you accept you are 18+ and agree to our T&C and Privacy Policy]]></string>
+    <string name="enter">Enter the email associated with your account and we will send an email with a verification code to reset your password.</string>
+    <string name="did">Did not receive the email? Check your spam, or try resend OTP.</string>
+    <string name="your">Your new password must be different from previous used password.</string>
+    <string name="enter_your">Enter your email address associated with the account and we will send an email with a link to change your password. Follow the instructions given in email to reset your password and create a new one.</string>
+    <string name="point_1">1. In case of if your prediction and your opponent prediction are same as result then you will get your entry fee back in your wallet.</string>
+    <string name="point_3">3. Make sure before clicking CONFIRM button on Prediction page that you have selected your desired team.</string>
+    <string name="point_4">4. Once you have clicked on CONFIRM button you will not be able to change your prediction option.</string>
+    <string name="point_5">5. You will be able to join the Toss Prediction contest before the 2 minute of Actual Toss Happening.</string>
+    <string name="point_6">6. In case if any contest does not have the required number of participants and you have joined that league then you will get you entry fee amount credited back to your wallet after the match starts.</string>
+    <string name="point_2">2. In case if your prediction is same as result and none of your opponent has the same prediction then you will get the money same as prize pool for the winner.</string>
+</resources>

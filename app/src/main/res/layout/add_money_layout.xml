@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/add_money_back"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Enter amount to add in wallet"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/amount_to_add"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edit_box_back"
+            android:elevation="5dp"
+            android:hint="Amount to be added"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_margin="5dp"
+            android:textColorHint="#9A9A9A"/>
+        <LinearLayout
+            android:id="@+id/add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/onboard_back"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Money"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your transaction is secured with our payment gateway."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="#5C5C5C"/>
+
+    </LinearLayout>
+
+</FrameLayout>

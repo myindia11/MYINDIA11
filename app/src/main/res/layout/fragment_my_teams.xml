@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomNavigation.MyTeams"
+    android:background="@color/white">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F8F8">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="start">
+            <TextView
+                android:id="@+id/team_one_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM ONE"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/team_one_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cricket_player_img"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="end">
+            <TextView
+                android:id="@+id/team_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM TWO"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/team_two_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cricket_player_img"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/match_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:textSize="14sp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamsRecycler"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="50dp"/>
+
+
+</FrameLayout>

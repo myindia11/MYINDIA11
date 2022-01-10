@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/grp_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="0.5dp"
+            android:src="@drawable/profile_pic_temp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/grp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_gravity="start"/>
+            <TextView
+                android:id="@+id/grp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="start"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E8E8E8"/>
+
+</LinearLayout>

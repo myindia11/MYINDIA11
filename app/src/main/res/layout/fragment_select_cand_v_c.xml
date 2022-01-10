@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTeam.SelectCandVC"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#EFEFEF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Captain &amp; Vice Captain"
+            android:textSize="18sp"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C gets 2x points &amp; VC gets 1.5x points"
+            android:textSize="12sp"
+            android:fontFamily="@font/raleway_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wicket keepers"
+        android:fontFamily="@font/raleway"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="4dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wicketRecycler"
+                android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batsmen"
+                    android:fontFamily="@font/raleway"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="4dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/batsRecycler"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Rounders"
+                    android:fontFamily="@font/raleway"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="4dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/allRecycler"
+                    android:layout_marginTop="3dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bowlers"
+                    android:fontFamily="@font/raleway"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="4dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bowlerRecycler"
+                    android:layout_marginTop="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

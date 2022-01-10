@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContestsFragments.SubContestsDetails"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@+id/toolbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_strip"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24_white">
+        <TextView
+            android:id="@+id/contestsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contests Name"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center|start"/>
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/wallet"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#E8E8E8"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remain Time"
+            android:textColor="#FF9800"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans"
+            android:id="@+id/remainTime"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/personalLeaderboardRecycler"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note*: If two ore more players have same points but the rank is showing different. Do not worry the winning ammount for that particula rank is going to be distribute equally to all the players have the same points."
+            android:textSize="10sp"
+            android:layout_margin="5dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tab_layout"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/colorStart"
+        app:tabTextColor="@color/black"
+        android:background="#E8E8E8"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager"/>
+
+
+</LinearLayout>

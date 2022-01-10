@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContestsFragments.ChangeTeam"
+    android:background="@color/white">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_vertical"
+        android:id="@+id/toolbarabout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_strip"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24_white">
+        <TextView
+            android:id="@+id/contestsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch Team"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Available teams to switch"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/open_sans"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/availableRecycler"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Already joined teams"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/open_sans"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/joinedRecycler"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#F4F4F4">
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="Current"
+                    android:textColor="#919191"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/oldId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEAMID"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_repeat_24"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change to"
+                    android:textColor="#919191"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:id="@+id/newId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEAMID"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/join_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/onboard_back"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REPLACE"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>
